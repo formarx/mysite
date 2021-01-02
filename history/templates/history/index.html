@@ -1,10 +1,13 @@
+{% extends "base.html" %}
 
+{% block content %}
 {% if history_list %}
     <ul>
     {% for h in history_list %}
-        <li>{{ h.history_text }}</a></li>
+        <li>{{ h.history_date.year }}.{{ h.history_date.month }}.{{ h.history_date.day }} {{ h.history_text }}</li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No History.</p>
 {% endif %}
+{% endblock %}

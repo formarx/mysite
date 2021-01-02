@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from polls import views
+from mysite import views as MyView
 
 urlpatterns = [
-    path('', views.IndexView.as_view()),
+    path('', MyView.MainPage, name='home'),
     path('polls/', include('polls.urls')),
     path('history/', include('history.urls')),
     path('admin/', admin.site.urls),
