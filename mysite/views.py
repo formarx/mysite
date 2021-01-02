@@ -4,14 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 from polls import models as pollsModels
-from history import views as historyViews
 from history import models as historyModels
-
-class MainView(historyViews.IndexView):
-    #template_name = 'polls/index.html'
-    #context_object_name = 'latest_question_list'
-
-    pass
 
 
 def MainPage(request):
