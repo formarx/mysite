@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'history.apps.HistoryConfig',
     'accounts.apps.AccountsConfig',
+    'news.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [
