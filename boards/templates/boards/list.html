@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if post_list %}
+    <ul>
+    {% for p in post_list %}
+        <li>{{ p.title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No History.</p>
+{% endif %}
+{% endblock %}
